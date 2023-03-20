@@ -1,4 +1,25 @@
 .container {
     width: 80%;
+    justify-content: center;
     background: rgb(169, 191, 162);
+    align-items: center;
+    margin: 60px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
+
+.exercicio {
+    display: flex;
+
+}
+.exercicio input{
+ width: 40px;
+ height: 30px;
+ margin: 2px;
+ outline: none;
+ font-size: 18px;
+ 
 }
