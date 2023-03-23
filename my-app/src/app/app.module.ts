@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-export { AppComponent } from './app.component';
+import { AppComponent } from './app.component';
+import { HeroComponent } from './components/hero/hero.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
@@ -15,18 +18,4 @@ export { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-
-export class AppComponent{
-  nome = 'beto';
-  count = 10;
-
-
-
- menos(){
-  this.count --;
-}
-
- mais(){
-  this.count ++;
-}
-}
+ export class AppModule {}

@@ -1,0 +1,10 @@
+.container {
+    background: rgb(184, 152, 152);
+    height: 200px;
+}
+
+.container .Header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
