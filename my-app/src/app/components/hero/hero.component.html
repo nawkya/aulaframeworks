@@ -5,11 +5,20 @@
     <button> Add hero</button>
 </div>
 
+<div class='heroes'> 
 
 <ul>
     <li *ngFor="let v of heros">{{ v }}</li>
 </ul>
 
-<h2>{{ hero.nome}} </h2> 
+</div>
+<div class='card-hero'>
+    <div>
+        <img src="capitao-america.jpg" alt=" " class="photo"/>
+
+        <h2>{{ hero.nome}} </h2> 
+   </div>
+   <div class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+</div>
 
 </div>
