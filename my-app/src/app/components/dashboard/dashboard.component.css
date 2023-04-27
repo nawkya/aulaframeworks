@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 80px 1fr;
+
+}
+
+
+.menu {
+    background: #fff;
+    border: 1px solid black;
+}
+
+
+
+
+
+.content {
+    background: #f0f0f0;
+    border: 1px solid black;
+}
+
+
+.content .overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.content .overview .box-dir{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.today {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(130, 129, 129, 0.519);
+
+}
+
+
+
+
+
+
+
+.header1 {
+    background: #3E87F0;
+    border: 1px solid black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.header1 i {
+    font-size: 25px;
+}
+
+
+.header1 h2 {
+    font-weight: 400;
+}
+
+
+
+
+
+
+.header2 {
+    background: #fff;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+.header2 i {
+    font-size: 21px;
+    color: rgba(130, 129, 129, 0.519);
+    margin: 10px;
+
+}
+
+.header2 .box-dir {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+.menu ul {
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.menu li {
+    padding: 10px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(130, 129, 129, 0.519);
+
+}

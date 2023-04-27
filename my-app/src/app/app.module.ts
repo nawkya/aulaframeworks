@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
     HeroComponent,
     LoginComponent,
     PageNotFoundComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -26,4 +28,4 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
   providers: [],
   bootstrap: [AppComponent]
 })
- export class AppModule {}
+export class AppModule {}
