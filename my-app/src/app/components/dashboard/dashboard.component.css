@@ -12,60 +12,51 @@
     width: 80%;
     height: 100vh;
     display: grid;
-
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 80px 1fr;
+    box-shadow: 0 0 20px 10px #ccc;
 
 }
+
+/* -------------------------------------------------------- */
+/* ------------------------------------------------------------ */
+/* ________________________________________________________________ */
 
 
 .menu {
-    background: #fff;
-    border: 1px solid black;
+    background: #f7f8fA;
+    /* border: 1px solid black; */
 }
 
 
 
+/* -------------------------------------------------------- */
+/* ------------------------------------------------------------ */
+/* ________________________________________________________________ */
 
 
-.content {
-    background: #f0f0f0;
-    border: 1px solid black;
-}
-
-
+/* ----------------------------------------- */
+/* 
 .content .overview {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+    margin: 30px 20px;
+} */
+
+/* -------------------------------------------- */
 
 
 
-.content .overview .box-dir{
-    display: flex;
-    gap: 10px;
-}
-
-
-
-.today {
-    width: 80px;
-    height: 30px;
-    text-align: center;
-    border-radius: 20px;
-    background: rgba(130, 129, 129, 0.519);
-
-}
-
-
-
+/* -------------------------------------------------------- */
+/* ------------------------------------------------------------ */
+/* ________________________________________________________________ */
 
 
 
 
 .header1 {
     background: #3E87F0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -73,24 +64,21 @@
     padding: 20px;
 
 }
-
+/* -------------------------------------------------- */
 .header1 i {
     font-size: 25px;
 }
-
+/* ------------------------------------------------ */
 
 .header1 h2 {
     font-weight: 400;
 }
 
-
-
-
-
+/* ------------------------------------------------ */
 
 .header2 {
     background: #fff;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -98,7 +86,7 @@
     padding: 20px;
 
 }
-
+/* ----------------------------------------------------- */
 
 .header2 i {
     font-size: 21px;
@@ -107,28 +95,112 @@
 
 }
 
+/* -------------------------------------------------------- */
+
+
 .header2 .box-dir {
     display: flex;
     justify-content: end;
 }
 
 
-
+/* -------------------------------------------------------- */
+/* ------------------------------------------------------------ */
+/* ______________________________________________________________ */
 
 .menu ul {
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 10px;
 
 }
+/* --------------------------------------------- */
 
 .menu li {
     padding: 10px;
     list-style: none;
+    display: flex;
+    align-items: center;
+
 }
 
+
+.menu li:hover .menu li a:hover {
+    color: #947dd2;
+}
+
+
+
+
+
+/* ---------------------------------------------- */
 .menu li a {
     text-decoration: none;
     font-size: 20px;
     color: rgba(130, 129, 129, 0.519);
+    margin-left: 15px;
 
+}
+
+/* ------------------------------------------ */
+
+.menu li i {
+    font-size: 20px ;
+}
+
+
+
+.content .ad {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 180px;
+    margin: 25px;
+    gap: 20px;
+
+}
+
+.content .ad .img {
+    background:#fbe5ca;
+}
+
+
+.content .ad .graph {
+    background: #f0edfe;
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 400px;
+    margin: 30px;
+    gap:  20px;
+}
+
+
+
+.title {
+    background: #e4f7f0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 4px #eee;
+}
+
+.title button {
+    background: #40c17d;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.title span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
 }
