@@ -197,3 +197,110 @@ section .box1 .member .card-member img {
         padding: 10px;
        
     }
+
+
+    .container .user-info {
+      
+        display: grid;
+        grid-template-rows: 100px 250px 90px 150px;
+    }
+
+  
+    .container  .user-info .box-2{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .container  .user-info .box-2 img{
+        width: 150px;
+        margin-bottom: 6px;
+    }
+
+    .container  .user-info .box-2 h5{
+        color: #b0abe2;
+    }
+
+
+
+
+
+    .container  .user-info .box-3{
+        background: rgb(232, 227, 233);
+        grid-template-rows: 1fr;
+        margin:0 auto ;
+        border-radius: 30px;
+        
+    }
+
+
+    .container  .user-info .box-3 .caixa1{
+        border-right: 1px solid#b0abe2;
+        display: grid;
+        width: 200px;
+        height: 80px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        
+        
+    }
+    .container  .user-info .box-3 .caixa2{
+        border-right: 1px solid#b0abe2;
+        display: grid;
+        width: 200px;
+        height: 80px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        
+        
+    }
+
+
+
+
+
+    .container  .user-info .box-3 .caixa1 h5{
+        color:#b0abe2 ;
+
+    }
+
+
+    .container  .user-info .box-3 .caixa1 .item1{
+     width: 5px;
+     height: 50px;
+    background: rgb(255, 255, 255);
+    }
+
+
+
+
+
+
+
+    .container  .user-info .box-3 .caixa2{
+        border-radius: 30px;
+        display: grid;
+        
+    }
+
+
+
+
+
+
+
+    .container  .user-info .box-4{
+        background: rgb(147, 177, 16);
+        
+    }
+
+    .container  .user-info .box-5{
+        background: rgb(207, 37, 116);
+        
+    }
+
+
+
+
