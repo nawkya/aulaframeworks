@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TitleStrategy } from '@angular/router';
+import { Router, TitleStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,13 +7,14 @@ import { TitleStrategy } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  constructor(private router: Router) {}
+
+
   isError = false;
   isSucess = false;
 
-  user = ""
-  pwd = ""
-
-
+  user = "";
+  pwd = "";
 
 
   login() {
@@ -23,8 +24,11 @@ export class LoginComponent {
       this.user == "ana.com" && this.pwd == "naju"
     ) {
       console.log("login aprovado!")
+
       this.isError = false;
       this.isSucess = true;
+      console.log('Login Aprovado')
+      this.router.navigateByUrl('/dashboard')
     }
 
     else {
