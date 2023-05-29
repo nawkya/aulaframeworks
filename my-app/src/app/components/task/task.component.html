@@ -4,14 +4,15 @@
     <form action="#">
 <div class="form-group">
     <label for="txtNome">Task</label>
-    <input type="text" name="txtNome" id="txtNome" placeholder="Digite o nome da tarefa"/>
+    <input type="text" name="txtNome" id="txtNome" placeholder="Digite o nome da tarefa" [formControl] = "nome"/>
+    
 
 
     <label for="txtDesc">Digite a descrição da tarefa</label>
-    <input type="text" name="txtDesc" id="txtDesc" placeholder="Digite a descrição da tarefa"/>
+    <input type="text" name="txtDesc" id="txtDesc" placeholder="Digite a descrição da tarefa"  [formControl]="descricao"/>
     
     <label for="txtResp">Responsável</label>
-    <input type="text" name="txtResp" id="txtResp" placeholder="Digite o Responsável da tarefa"/>
+    <input type="text" name="txtResp" id="txtResp" placeholder="Digite o Responsável da tarefa"   [formControl]= "responsavel"/> 
     
     
     <label for="txtInicio">Data Inicio</label>
