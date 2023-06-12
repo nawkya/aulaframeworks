@@ -356,3 +356,7 @@ filter: brightness(140%);
   border-radius: 50%;
   background: #40c17d;
 }
+
+.graph img{
+  width:280px;
+}
