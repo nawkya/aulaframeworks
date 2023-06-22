@@ -359,4 +359,6 @@ filter: brightness(140%);
 
 .graph img{
   width:280px;
+  top: 10px;
+  margin-left: 10px;
 }

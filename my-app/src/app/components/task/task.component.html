@@ -2,17 +2,33 @@
 <div class="container">
 
     <form action="#">
+
+        <div class="mssg" *ngIf="isError">
+            <i class='bx bxs-error' ></i>
+            <span> Task não cadastrada!</span>
+        </div>
+
+
+        <div class="msg" *ngIf="isSucess">
+            <i class="bx bx-check-circle"></i>
+            <span> Task cadastrada!!</span>
+        </div>
+
+
+
+
+
 <div class="form-group">
     <label for="txtNome">Task</label>
-    <input type="text" name="txtNome" id="txtNome" placeholder="Digite o nome da tarefa" [formControl] = "nome"/>
+    <input type="text" name="txtNome" id="txtNome" placeholder="Digite o nome da tarefa"/>
     
 
 
     <label for="txtDesc">Digite a descrição da tarefa</label>
-    <input type="text" name="txtDesc" id="txtDesc" placeholder="Digite a descrição da tarefa"  [formControl]="descricao"/>
+    <input type="text" name="txtDesc" id="txtDesc" placeholder="Digite a descrição da tarefa" />
     
     <label for="txtResp">Responsável</label>
-    <input type="text" name="txtResp" id="txtResp" placeholder="Digite o Responsável da tarefa"   [formControl]= "responsavel"/> 
+    <input type="text" name="txtResp" id="txtResp" placeholder="Digite o Responsável da tarefa" /> 
     
     
     <label for="txtInicio">Data Inicio</label>
@@ -23,7 +39,7 @@
 <img src="/assets/totoroo.png">
     <div class="button">
     <button>Cancelar</button>
-    <button>Cadastrar</button>
+    <button (click)= "addTask()">Cadastrar</button>
 </div>
 
 

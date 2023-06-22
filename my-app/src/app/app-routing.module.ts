@@ -16,8 +16,10 @@ const routes: Routes = [
 { path: 'create', component: CreateUserComponent },
 { path: 'dashboard', component: DashboardComponent },
 { path: 'task', component: TaskComponent },
+{ path: 'equipe', component: TaskComponent },
+
 { path: 'todolist', component: TodolistComponent },
-{ path: 'equipe', component: EquipeComponent },
+{ path: '', component: EquipeComponent },
 
 
 { path: '', redirectTo: '/login', pathMatch: 'full' },
